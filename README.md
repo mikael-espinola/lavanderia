@@ -23,5 +23,5 @@ Users will be able to:
 
 ## Author
 
-- linkedIn - [Mikael Espínola](https://www.linkedin.com/in/mikaelespinola)
-- E-mail - [GMAIL](mailto:mikaelespinolaa@gmail.com)
+- LinkedIn - [Mikael Espínola](https://www.linkedin.com/in/mikaelespinola)
+- E-mail - [Gmail](mailto:mikaelespinolaa@gmail.com)
