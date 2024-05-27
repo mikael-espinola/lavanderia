@@ -5,8 +5,6 @@ import Link from "next/link";
 
 import Items from "./items/Items";
 import ClientReview from "./clientReview/ClientReview";
-import Contact from "./contact/Contact";
-import Localization from "./localization/Localization";
 
 const Homepage = () => {
   return (
