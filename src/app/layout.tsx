@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { Open_Sans } from "next/font/google";
+
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
-import { Open_Sans } from "next/font/google";
+import WAButton from "@/components/whatsappButton/WAButton";
 
 const open_sans = Open_Sans({
   weight: ["400", "700"],
@@ -10,7 +12,7 @@ const open_sans = Open_Sans({
   subsets: ["latin"],
 });
 
-const backgroundClass = "bg-fuchsia-300";
+const backgroundClass = "bg-purple-300";
 
 const bodyClass = `${open_sans.className} ${backgroundClass}`;
 
@@ -29,6 +31,7 @@ export default function RootLayout({
         <Header />
         {children}
         <Footer />
+        <WAButton />
       </body>
     </html>
   );

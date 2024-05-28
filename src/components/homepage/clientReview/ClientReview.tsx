@@ -1,4 +1,3 @@
-import Image from "next/image";
 import React from "react";
 import { CgProfile } from "react-icons/cg";
 
@@ -33,22 +32,24 @@ const ClientReview = () => {
   ];
 
   return (
-    <>
+    <div className="flex w-full h-[100%] p-4">
       {data.map((client) => (
         <div
           key={client.id}
-          className="bg-fuchsia-300 h-[70%] w-[15em] flex justify-center flex-col mx-2"
+          className="bg-purple-300  w-[35%] flex justify-center flex-col mx-2"
         >
-          <div className="p-2">
+          <div className="p-2 ">
             <p className="flex justify-center text-5xl">
               <CgProfile />
             </p>
             <p className="text-center my-3">{client.name}</p>
           </div>
-          <span className="text-center text-[13px] p-2">{client.message}</span>
+          <span className="flex justify-center items-center text-center h-[100%] w-[100%] text-[13px] p-2">
+            {client.message}
+          </span>
         </div>
       ))}
-    </>
+    </div>
   );
 };
 
