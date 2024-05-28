@@ -26,8 +26,8 @@ const ServicesPage = () => {
     },
   ];
   return (
-    <div className="flex py-2 ">
-      <ul className="flex justify-evenly w-[100%]">
+    <div className="flex py-2 min-h-[500px] ">
+      <ul className="flex gap-3 h-[100%] mt-3 justify-center w-[100%]">
         {data.map((item) => (
           <ServicesItem item={item} />
         ))}

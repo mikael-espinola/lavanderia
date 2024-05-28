@@ -34,7 +34,7 @@ const Items = () => {
             </p>
           </li>
         ) : (
-          <li className="bg-fuchsia-400 p-[0.3em] rounded-lg bg-opacity-50">
+          <li className="bg-purple-400 p-[0.3em] rounded-lg bg-opacity-50">
             <p className="text-[12px] capitalize">{itemObj.item}</p>
           </li>
         )

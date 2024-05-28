@@ -1,8 +1,8 @@
 import React from "react";
-import LaundryImage from "@/assets/laundry.png";
 import Image from "next/image";
 import Link from "next/link";
 
+import LaundryImage from "@/assets/logo.png";
 import Items from "./items/Items";
 import ClientReview from "./clientReview/ClientReview";
 
@@ -28,13 +28,14 @@ const Homepage = () => {
       </section>
       <section className="flex justify-center p-2">
         <Link
-          className="bg-fuchsia-400 p-3 rounded-2xl hover:text-white hover:bg-fuchsia-800 hover:transition-colors"
+          className="bg-purple-400 p-3 mb-6 rounded-2xl hover:text-white hover:bg-purple-800 hover:transition-colors"
           href="/services"
         >
           <span>Verifique agora nossas ofertas</span>
         </Link>
       </section>
-      <section className="w-full bg-white bg-opacity-20 h-[20em] flex items-center justify-center p-3">
+      <section className="w-full bg-white bg-opacity-20 h-[20em] flex items-center p-3 flex-col">
+        <h4 className="my-6 text-xl">Veja o que nossos clientes falam</h4>
         <ClientReview />
       </section>
     </>

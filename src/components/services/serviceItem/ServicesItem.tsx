@@ -16,7 +16,7 @@ interface Props {
 
 const ServicesItem = ({ item }: Props) => {
   return (
-    <li key={item.id} className="p-4 bg-fuchsia-300 rounded ">
+    <li key={item.id} className="p-4 bg-purple-300 rounded ">
       <h2 className="text-center uppercase p-2">{item.service_name}</h2>
       {item.id === 4 ? (
         <>

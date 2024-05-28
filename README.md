@@ -8,7 +8,7 @@ This is a website solution asked by Iasmim Laundry corp.
 
 Users will be able to:
 
-- View products, pricing, info and contacts way
+- View products, pricing, info and contacts options
 - Send personal message to whatsapp company
 - select the product/service and ask its informations directly with the company
 
