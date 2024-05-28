@@ -9,6 +9,7 @@ import { FaWhatsapp } from "react-icons/fa";
 interface Props {
   item: {
     id: number;
+    unity?: string;
     service_name: string;
     price: string;
   };
@@ -24,7 +25,7 @@ const ServicesItem = ({ item }: Props) => {
             <Image src={ImageFake2} alt="test" />
           </div>
           <div className="flex gap-2 justify-center">
-            <span className="capitalize">{item.price}</span>
+            <span className="capitalize text-sm">{item.price}</span>
           </div>
         </>
       ) : (
@@ -32,12 +33,14 @@ const ServicesItem = ({ item }: Props) => {
           <div className="w-[180px] py-3">
             <Image src={ImageFake} alt="test" />
           </div>
-          <div className="flex gap-2">
+          <div className="flex gap-2 text-sm justify-center">
             <p>
-              <span className="capitalize">por</span> apenas:{" "}
+              <span className="capitalize">A</span> partir:
             </p>
             <span>R$ {item.price}</span>
-            <span className="text-[10px] flex items-center">cada</span>
+            <span className="text-[8px] flex items-center">
+              {item.unity ? `${item.unity}` : "cada"}
+            </span>
           </div>
         </>
       )}
